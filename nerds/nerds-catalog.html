@@ -22,28 +22,26 @@
 		</div>
 	</header>
 	<main class="shop content">
-		<div class="shop-options">
-			<h2>Стоимость:</h2>
-			<form class="shop-options-cost">
-				<input type="range" min="0" max="15000" name="">
-				ОТ<input type="number" name="min" value="0">
-				ДО<input type="number" name="max" value="15000">
-			</form>
-			<h2>СЕТКА:</h2>
-			<form class="shop-options-grid">
-				<input type="radio" name="grid">Адаптивная
-				<input type="radio" name="grid">Фиксированная
-				<input type="radio" name="grid">Резиновая
-			</form>
-			<form class="shop-options-features">
-				<input type="checkbox" name="features">Слайдер
-				<input type="checkbox" name="features">Блок приемуществ
-				<input type="checkbox" name="features">Новости
-				<input type="checkbox" name="features">Галерея
-				<input type="checkbox" name="features">Корзина
-			</form>
-			<button class="shop-options-show">ПОКАЗАТЬ</button>
-		</div>
+		<form class="shop-options">
+			<legend>Стоимость:</legend>
+				<label class="shop-option"><input type="range" min="0" max="15000" name=""></label>
+				<label class="shop-option"><input type="number" name="min" value="0"></label>
+				<label class="shop-option"><input type="number" name="max" value="15000"></label>
+			
+			<legend>СЕТКА:</legend>
+				<label class="shop-option"><input type="radio" name="grid">Адаптивная</label>
+				<label class="shop-option"><input type="radio" name="grid">Фиксированная</label>
+				<label class="shop-option"><input type="radio" name="grid">Резиновая</label>
+	
+				<legend>ОСОБЕННОСТИ:</legend>
+				<label class="shop-option"><input type="checkbox" name="features">Слайдер</label>
+				<label class="shop-option"><input type="checkbox" name="features">Блок приемуществ</label>
+				<label class="shop-option"><input type="checkbox" name="features">Новости</label>
+				<label class="shop-option"><input type="checkbox" name="features">Галерея</label>
+				<label class="shop-option"><input type="checkbox" name="features">Корзина</label>
+				
+				<button class="shop-options-show" type="button">ПОКАЗАТЬ</button>
+		</form>
 		<div class="shop-sorting">
 			<b>СОРТИРОВАТЬ:</b>
 			<span class="sorting-option">ПО ЦЕНЕ</span>
